@@ -21,7 +21,7 @@ export default function Home() {
       <Banner heightSection={true}
         img='/images/banner-cocos-yala-home.jpg'
         title={(<>Venta, compra y distribución de <span>cocos</span> en Panamá</>)}
-        text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.' />
+        text='Conectamos a los productores de Guna Yala con los mercados de Panamá mediante una logística eficiente y confiable.' />
       <Intro 
         img='/images/intro-coco-yala.jpg'
         title='Soluciones integrales para la industria del coco en Panamá'
