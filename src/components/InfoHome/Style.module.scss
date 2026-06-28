@@ -1,0 +1,57 @@
+@import '@/styles/Main.scss';
+
+.section {
+  background-color: $gray;
+  padding: 60px 20px;
+
+}
+
+.container {
+  @include container;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  overflow: hidden;
+  padding: 0;
+  
+  @media (min-width: $lg) {
+    grid-auto-flow: row-reverse;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.image {
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.content {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 30px;
+  
+  @media (min-width: $lg) {
+    min-height: 450px;
+    order: -1;
+  }
+}
+
+.title {
+  @include title;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: $mainColor;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.text {
+  @include text;
+}

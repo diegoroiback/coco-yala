@@ -1,0 +1,33 @@
+@import '@/styles/Main.scss';
+
+.section {
+  padding: 60px 0;
+}
+
+.container {
+  @include container;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.title {
+  color: $black;
+  font-size: $titlestSize;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: $mainColor;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.text {
+  @include text;
+}

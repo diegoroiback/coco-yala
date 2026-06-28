@@ -1,0 +1,67 @@
+@import '@/styles/Main.scss';
+
+.section {
+  background-color: $gray;
+  padding: 60px 0;
+}
+
+.container {
+  @include container;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  @include title;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 30px;
+  width: 100%;
+  
+  @media (min-width: $sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.item {
+  background-color: $white;
+  border-radius: 15px;
+  list-style: none;
+  padding: 100px 20px 20px 20px;
+
+  &:nth-child(even) {
+    padding: 20px 20px 100px 20px;
+  }
+}
+
+.icon {
+  color: $green;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.name {
+  color: $black;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.text {
+  @include text;
+}
+
+.btn {
+  @include btn;
+}

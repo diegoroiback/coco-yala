@@ -1,0 +1,61 @@
+// Variables
+$mainColor: #9a714f;
+$black: #333;
+$white: #fff;
+$green: #6e965c;
+$gray: #eaeaea;
+
+$sm: 540px;
+$md: 800px;
+$lg: 1024px;
+$xl: 1200px;
+
+$titlestSize: clamp(40px, 6vw, 60px);
+$textSize: 18px;
+$btnSize: 18px;
+
+// Mixins
+@mixin btn (
+  $bg: $mainColor,
+  $bgHover: $white,
+  $color: $white,
+  $colorHover: $mainColor
+) {
+  background-color: $bg;
+  border: 1px solid $bg;
+  border-radius: 30px;
+  color: $color;
+  display: inline-block;
+  font-size: $btnSize;
+  font-weight: 500;
+  line-height: 1;
+  padding: 17px 30px;
+  transition: all .5s;
+
+  &:hover {
+    background-color: $bgHover;
+    color: $colorHover;
+  }
+}
+
+@mixin container {
+  margin: auto;
+  padding: 0 20px;
+  width: 100%;
+
+  @media (min-width: $xl) {
+    max-width: 1400px;
+  }
+}
+
+@mixin title {
+  font-size: $titlestSize;
+  color: $black;
+  font-weight: 700;
+}
+
+@mixin text {
+  font-size: $textSize;
+  color: $black;
+  font-weight: 300;
+}

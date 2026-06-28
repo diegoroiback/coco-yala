@@ -1,0 +1,66 @@
+@import '@/styles/Main.scss';
+
+.section {
+  padding: 0 0 60px;
+}
+
+.container {
+  @include container;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.item {
+  align-items: center;
+  background-color: $white;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  gap: 15px;
+  padding: 10px;
+  transition: background-color .5s;
+
+  &:hover {
+    background-color: $gray;
+  }
+}
+
+.ico {
+  align-items: center;
+  background-color: $gray;
+  border-radius: 10px;
+  display: flex;
+  font-size: 29px;
+  justify-content: center;
+  padding: 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.image {
+  margin-top: 50px;
+  overflow: hidden;
+  border-radius: 30px;
+}

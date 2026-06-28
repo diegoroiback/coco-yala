@@ -1,0 +1,84 @@
+@import '@/styles/Main.scss';
+
+.section {
+  background-color: $mainColor;
+  padding: 60px 0;
+}
+
+.container {
+  @include container;
+}
+
+.upper {
+  border-bottom: 1px solid #b89170;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(1, 1fr);
+  padding-bottom: 20px;
+
+  @media (min-width: $sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.image {
+  margin-bottom: 20px;
+}
+
+.title {
+  color: $white;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.info {
+  &_item {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.text {
+  color: #f1f1f1;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.icon {
+  color: $white;
+}
+
+.link {
+  color: #f1f1f1;
+  font-size: 17px;
+  font-weight: 300;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.menu {
+  &_list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 20px;
+
+    @media (min-width: $sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &_item {
+    margin-bottom: 10px;
+  }
+}
+
+.rights {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}

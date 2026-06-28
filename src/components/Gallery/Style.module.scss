@@ -1,0 +1,48 @@
+@import '@/styles/Main.scss';
+
+.section {
+  padding: 60px 0;
+}
+
+.container {
+  @include container;
+}
+
+.title {
+  @include title;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  overflow: hidden;
+  border-radius: 20px;
+
+  @media (min-width: $sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.image {
+  height: 140px;
+  overflow: hidden;
+
+  @media (min-width: $sm) {
+  height: 300px;
+  }
+
+  img {
+    cursor: pointer;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s;
+    width: 100%;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

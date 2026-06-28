@@ -1,9 +1,7 @@
 import Header from "@/components/Header/Header";
 import Banner from "@/components/Banner/Banner";
-import Intro from "@/components/Intro/Intro";
-import Services from "@/components/Services/Services";
-import InfoHome from "@/components/InfoHome/InfoHome";
-import Gallery from "@/components/Gallery/Gallery";
+import InnerIntro from "@/components/InnerIntro/InnerIntro";
+import ServicesInner from "@/components/ServicesInner/ServicesInner";
 import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
@@ -18,20 +16,17 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <Banner heightSection={true}
-        img='/images/banner-cocos-yala-home.jpg'
-        title={(<>Venta, compra y distribución de <span>cocos</span> en Panamá</>)}
-        text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.' />
-      <Intro 
+      <Banner heightSection={false}
+        img='/images/banner-internas.jpg' />
+      <InnerIntro 
         img='/images/intro-coco-yala.jpg'
-        title='Soluciones integrales para la industria del coco en Panamá'
+        title='Nuestros servicios'
+        subtitle='Soluciones para la industria del coco en Panamá'
         text={<>En Coco Yala nos dedicamos a la compra, acopio, comercialización, transporte y distribución de cocos de la más alta calidad. Trabajamos de la mano con productores locales para garantizar una cadena de suministro confiable, llevando productos frescos desde las zonas de cultivo hasta nuestros clientes.
         <br />
         <br />
         Nuestra experiencia, compromiso logístico y conocimiento del mercado nos permiten ofrecer soluciones integrales para la industria del coco, asegurando calidad, trazabilidad y cumplimiento en cada entrega.</>} />
-      <Services />
-      <Gallery images={galleryPhotos} title={true} />
-      <InfoHome />
+      <ServicesInner />
       <Footer />
     </div>
   );

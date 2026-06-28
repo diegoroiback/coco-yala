@@ -1,0 +1,100 @@
+@import '@/styles/Main.scss';
+
+.section {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo,
+.content {
+  position: relative;
+
+  &::before {
+    background-color: #a3d6e3;
+    content: '';
+    filter: blur(32px);
+    height: 100%;
+    left: 0;
+    opacity: .2;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.menuBtn {
+  background-color: transparent;
+  border: 0;
+  color: $black;
+  cursor: pointer;
+  display: none;
+  font-size: 35px;
+
+  @media (max-width: $md) {
+    display: block;
+  }
+
+  &_close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+
+  @media (max-width: $md) {
+    align-items: center;
+    background-color: $white;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    right: -120%;
+    top: 0;
+    transition: right .5s;
+    width: 100%;
+
+    &_active {
+      right: 0;
+    }
+  }
+}
+
+.link {
+  color: $black;
+  font-size: 17px;
+  transition: color .5s;
+
+  &:hover {
+    color: $white;
+  }
+
+  @media (max-width: $md) {
+    font-size: 25px;
+    font-weight: 300;
+
+    &:hover {
+      color: $mainColor
+    }
+  }
+}
+
+.btn {
+  @include btn;
+}

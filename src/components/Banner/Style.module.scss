@@ -1,0 +1,66 @@
+@import '@/styles/Main.scss';
+
+.section {
+  height: 500px;
+  position: relative;
+  width: 100%;
+
+  &_home {
+    height: 100vh;
+  }
+}
+
+.image {
+  background-position: -100% 0px;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  @media (min-width: $sm) {
+    background-position: 0 center;
+  }
+}
+
+.content {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  max-width: 90%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+  z-index: 1;
+
+  @media (min-width: $md) {
+    max-width: 65%;
+  }
+
+  @media (min-width: $xl) {
+    left: 50px;
+    max-width: 45%;
+  }
+}
+
+.title {
+  color: $black;
+  font-size: clamp(40px, 6vw, 70px);
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 20px;
+
+  span {
+    font-weight: 800;
+  }
+}
+
+.text {
+  font-size: $textSize;
+  margin-bottom: 30px;
+  font-weight: 300
+}
+
+.btn {
+  @include btn;
+}
