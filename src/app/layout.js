@@ -9,7 +9,7 @@ const robotoSans = Roboto({
 
 export const metadata = {
   title: "Coco Yala | venta y distribución de cocos en Panamá",
-  description: "En Coco Yala somos especialistas en la venta y distribución de cocos en Panamá. Suministramos cocos de alta calidad para hoteles, restaurantes, supermercados y negocios.",
+  description: "Coco Yala, especialistas en la venta y distribución de cocos en Panamá. Suministramos cocos de alta calidad para hoteles, restaurantes, supermercados y negocios.",
 };
 
 export default function RootLayout({ children }) {

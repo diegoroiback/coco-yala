@@ -4,6 +4,12 @@ import InnerIntro from "@/components/InnerIntro/InnerIntro";
 import ServicesInner from "@/components/ServicesInner/ServicesInner";
 import Footer from "@/components/Footer/Footer";
 
+export const metadata = {
+  title: 'Servicios de Compra y Distribución de Cocos en Panamá | Coco Yala',
+  description:
+    'Ofrecemos compra, acopio, transporte marítimo, logística terrestre y distribución de cocos en Panamá para clientes mayoristas, distribuidores y empresas.',
+}
+
 export default function Home() {
   const galleryPhotos = [
     '/images/galeria-cocos-kuna-1.jpg',

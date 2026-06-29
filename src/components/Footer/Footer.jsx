@@ -32,6 +32,10 @@ const Footer = () => {
       url: '/galeria'
     },
     {
+      name: 'Preguntas frecuentes',
+      url: '/preguntas-frecuentes'
+    },
+    {
       name: 'Contacto',
       url: '/contacto'
     },

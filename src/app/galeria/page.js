@@ -4,18 +4,13 @@ import InnerIntro from "@/components/InnerIntro/InnerIntro";
 import Gallery from "@/components/Gallery/Gallery";
 import Footer from "@/components/Footer/Footer";
 
+export const metadata = {
+  title: 'Galería de Operaciones y Producción de Coco | Coco Yala',
+  description:
+    'Descubre imágenes de nuestras operaciones, transporte, productores y comunidades de Guna Yala que forman parte de la cadena productiva de Coco Yala.',
+}
+
 export default function Home() {
-  const galleryPhotos = [
-    '/images/galeria-cocos-kuna-1.jpg',
-    '/images/galeria-cocos-kuna-2.jpg',
-    '/images/galeria-cocos-kuna-3.jpg',
-    '/images/galeria-cocos-kuna-4.jpg',
-    '/images/galeria-cocos-kuna-5.jpg',
-    '/images/galeria-cocos-kuna-6.jpg',
-    '/images/galeria-cocos-kuna-7.jpg',
-    '/images/servicio-coco-1.jpg',
-    '/images/servicio-coco-3.jpg',
-  ]
   return (
     <div>
       <Header />

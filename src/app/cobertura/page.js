@@ -4,6 +4,12 @@ import InnerIntro from "@/components/InnerIntro/InnerIntro";
 import Coverage from "@/components/Coverage/Coverage";
 import Footer from "@/components/Footer/Footer";
 
+export const metadata = {
+  title: 'Cobertura de Coco Yala | Distribución de Cocos en Panamá',
+  description:
+    'Operamos en toda la región de Guna Yala y distribuimos cocos hacia Chepo, Ciudad de Panamá y otros mercados nacionales mediante una logística eficiente.',
+}
+
 export default function Home() {
   return (
     <div>

@@ -4,6 +4,12 @@ import InnerIntro from "@/components/InnerIntro/InnerIntro";
 import Fleet from "@/components/Fleet/Fleet";
 import Footer from "@/components/Footer/Footer";
 
+export const metadata = {
+  title: 'Flota Marítima y Logística de Coco Yala | Transporte de Cocos Panamá',
+  description:
+    'Contamos con embarcaciones y transporte terrestre propio para movilizar cocos desde Guna Yala hacia Chepo, Ciudad de Panamá y otros destinos comerciales.',
+}
+
 export default function Home() {
 
   return (

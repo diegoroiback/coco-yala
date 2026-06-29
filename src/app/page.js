@@ -3,6 +3,7 @@ import Banner from "@/components/Banner/Banner";
 import Intro from "@/components/Intro/Intro";
 import Services from "@/components/Services/Services";
 import InfoHome from "@/components/InfoHome/InfoHome";
+import Faq from "@/components/Faq/Faq";
 import Gallery from "@/components/Gallery/Gallery";
 import Footer from "@/components/Footer/Footer";
 
@@ -32,6 +33,7 @@ export default function Home() {
       <Services />
       <Gallery images={galleryPhotos} title={true} />
       <InfoHome />
+      <Faq showTitle={true} />
       <Footer />
     </div>
   );

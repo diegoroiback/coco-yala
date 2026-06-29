@@ -4,6 +4,12 @@ import InnerIntro from "@/components/InnerIntro/InnerIntro";
 import Company from "@/components/Company/Company";
 import Footer from "@/components/Footer/Footer";
 
+export const metadata = {
+  title: 'Quiénes Somos | Coco Yala - Cocos en Panamá',
+  description:
+    'Conoce la historia, misión y compromiso de Coco Yala, una empresa dedicada al desarrollo de la industria del coco y al fortalecimiento de las comunidades productoras de Guna Yala.',
+}
+
 export default function Home() {
   const galleryPhotos = [
     '/images/galeria-cocos-kuna-1.jpg',

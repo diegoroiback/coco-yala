@@ -4,6 +4,12 @@ import InnerIntro from "@/components/InnerIntro/InnerIntro";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 
+export const metadata = {
+  title: 'Contacto | Compra y Venta de Cocos en Panamá - Coco Yala',
+  description:
+    'Comunícate con Coco Yala para solicitar cotizaciones, abastecimiento de cocos al por mayor, transporte y servicios logísticos en Panamá.',
+}
+
 export default function Home() {
   return (
     <div>

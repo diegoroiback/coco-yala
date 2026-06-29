@@ -1,0 +1,95 @@
+@import '@/styles/Main.scss';
+
+.section {
+  padding: 0 0 60px;
+}
+
+.container {
+  @include container;
+}
+
+.title {
+  @include title;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.trigger {
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: space-between;
+  padding: 22px 24px;
+  text-align: left;
+  width: 100%;
+}
+
+.icon {
+  font-size: 24px;
+  transition: transform .3s;
+}
+
+.trigger[data-state='open'] .icon {
+  transform: rotate(45deg);
+}
+
+.content {
+  overflow: hidden;
+  padding: 0 24px;
+}
+
+.content p {
+  @include text;
+  color: #666;
+  padding-bottom: 22px;
+}
+
+.content[data-state='open'] {
+  animation: slideDown .3s ease;
+}
+
+.content[data-state='closed'] {
+  animation: slideUp .3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  to {
+    max-height: 300px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    max-height: 300px;
+    opacity: 1;
+  }
+
+  to {
+    max-height: 0;
+    opacity: 0;
+  }
+}

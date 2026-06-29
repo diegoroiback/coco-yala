@@ -9,7 +9,7 @@ const Banner = ({img, heightSection, title, text, url}) => {
       <div className={styles.content}>
         {title && (
           <>
-            <h2 className={styles.title}>{title}</h2>
+            <h1 className={styles.title}>{title}</h1>
             <p className={styles.text}>{text}</p>
             <Link href="/contacto" className={styles.btn}>Contactar</Link>
           </>
