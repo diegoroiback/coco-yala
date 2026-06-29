@@ -11,6 +11,18 @@ export const metadata = {
 }
 
 export default function Home() {
+  const galleryPhotos = [
+    '/images/galeria-cocos-kuna-1.jpg',
+    '/images/galeria-cocos-kuna-2.jpg',
+    '/images/galeria-cocos-kuna-3.jpg',
+    '/images/galeria-cocos-kuna-4.jpg',
+    '/images/galeria-cocos-kuna-5.jpg',
+    '/images/galeria-cocos-kuna-6.jpg',
+    '/images/galeria-cocos-kuna-7.jpg',
+    '/images/servicio-coco-1.jpg',
+    '/images/servicio-coco-3.jpg',
+  ]
+
   return (
     <div>
       <Header />
